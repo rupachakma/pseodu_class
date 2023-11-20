@@ -1,0 +1,62 @@
+
+/* unvisited link */
+a:link{
+    color:rgb(91, 217, 91);
+}
+/* mouse over */
+a:hover{
+    color:rgb(46, 100, 104);
+    background-color: chartreuse;
+    
+}
+/* visited link */
+a:visited{
+    color:rgba(209, 14, 14, 0.995);
+}
+/* active link */
+a:active{
+    color: rgb(220, 198, 220);
+    font-size: 35px;
+    background-color: fuchsia;
+}
+/* use of child */
+section p:first-child{
+    color: red;
+}
+section p:first-letter{
+    color: orange;
+    font-size: 20px;
+}
+/* use of nth type */
+p:nth-of-type(2n+1){
+    color: greenyellow;
+}
+
+.save-input:focus{
+    background-color: bisque;
+    border:3px solid red;
+}
+.save-input:invalid{
+    background-color: red;
+}
+
+.range-input:out-of-range{
+    background-color: red;
+}
+.card p{
+    width: 200px;
+    height: 100px;
+    border:2px solid black;
+    position: relative;
+}
+
+.card p::before{
+    content: "";
+    background-color: rgb(209, 201, 192);
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+}
